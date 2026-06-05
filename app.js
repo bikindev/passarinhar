@@ -87,7 +87,7 @@ const birdsData = [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Patagioenas_picazuro_854.jpg/960px-Patagioenas_picazuro_854.jpg"
         ],
         audio: "https://xeno-canto.org/7278/download"
-    }
+    },
     {
         id: 6,
         name: "Seriema",
