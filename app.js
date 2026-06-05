@@ -88,6 +88,20 @@ const birdsData = [
         ],
         audio: "https://xeno-canto.org/7278/download"
     }
+    {
+        id: 6,
+        name: "Seriema",
+        scientificName: "Cariama cristata",
+        shortDescription: "Ave símbolo do estado de Minas Gerais.",
+        fullDescription: "",
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/6/64/174_Red-legged_seriema_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+            "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/88527851/1800",
+            "https://s2-g1.glbimg.com/jO2tlfUV7WGZgFNyh3dCGhAmVEU=/0x0:1080x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/p/i/8EI8VWS7Oip98m7vlVMQ/seriema-kacau-oliveira-2-.jpg",
+            "https://s2.glbimg.com/QbGPcIEtLULvM9vAdyNGmz9N5-8=/620x465/s.glbimg.com/jo/g1/f/original/2016/12/19/bio_135.jpg"
+        ],
+        audio: "https://xeno-canto.org/1064768/download"
+    }
 ];
 
 // 2. Variáveis de controle do Modal e Carrossel
