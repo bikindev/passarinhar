@@ -1,0 +1,285 @@
+/* Configurações Gerais e Cores Modernas/Minimalistas */
+:root {
+    --bg-color: #fafafa;         /* Cinza quase branco, muito limpo */
+    --card-bg: #ffffff;
+    --text-main: #1a1a1a;        /* Preto suave, menos agressivo */
+    --text-muted: #666666;
+    --accent-color: #2b4c3f;     /* Verde floresta profundo e elegante */
+    --accent-light: #eef2f0;     /* Tom verde bem suave para fundos */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Cabeçalho Minimalista */
+header {
+    text-align: center;
+    padding: 5rem 2rem 3rem 2rem; /* Mais espaço para respirar */
+    background-color: var(--bg-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* O Poema: Estilo Clean e Flutuante */
+.poema {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    max-width: 460px;
+    margin: 3.5rem auto 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px); /* Efeito sutil de vidro embaçado */
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Sombra quase invisível */
+}
+
+.poema cite {
+    display: block;
+    text-align: right;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* Grade de Conteúdo */
+main {
+    max-width: 1100px;
+    margin: 0 auto 5rem auto;
+    padding: 0 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem; /* Espaço generoso entre os cards */
+}
+
+/* Cartões Modernos (Sem bordas, foco na foto e transição suave) */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.06); /* Sombra suave e expandida */
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover img {
+    transform: scale(1.03); /* Zoom ultra sutil ao passar o mouse */
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Modal Minimalista e Fluido */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco transparente em vez de preto */
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 1000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 24px;
+    max-width: 650px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+/* Botão Fechar Elegante */
+.close-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.close-button:hover {
+    color: var(--text-main);
+    background: #eee;
+}
+
+/* Carrossel Clean */
+.carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém a mesma proporção horizontal no celular e PC */
+    background-color: var(--bg-color);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Setas do Carrossel Discretas */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text-main);
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.carousel-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.prev { left: 16px; }
+.next { right: 16px; }
+
+/* Textos dentro do Modal */
+#modal-title {
+    font-size: 1.75rem;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.02em;
+}
+
+.scientific-name {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--accent-color);
+    margin: 0 0 1.5rem 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin-bottom: 1.5rem;
+}
+
+#modal-description {
+    line-height: 1.7;
+    color: #333333;
+    font-size: 0.98rem;
+}
+
+/* Ajuste fino para barra de rolagem do modal */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Estilização do Player de Áudio */
+.audio-player-container {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.audio-player-container label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* Deixa o player padrão do navegador com cantos arredondados e largura total */
+audio {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}

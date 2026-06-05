@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passarinhar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🦅 "Tudo que está entre aspas pode voar"</h1>
+        <p>Uma coletânea dos poemas do alvorecer e do poente na roça</p>
+        <blockquote class="poema">
+            "Os poemas<br><br>
+            Os poemas são pássaros que chegam<br>
+            não se sabe de onde e pousam<br>
+            no livro que lês.<br> 
+            Quando fechas o livro, eles alçam voo<br>
+            como de um alçapão.<br>
+            Eles não têm pouso<br>
+            nem porto;<br>
+            alimentam-se um instante em cada<br>
+            par de mãos e partem.<br>
+            E olhas, então, essas tuas mãos vazias,<br>
+            no maravilhado espanto de saberes<br>
+            que o alimento deles já estava em ti..."
+            <cite>— Mário Quintana</cite>
+        </blockquote>
+    </header>
+
+    <main>
+        <div id="catalog-grid" class="grid-container"></div>
+    </main>
+
+    <div id="bird-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            
+            <div class="carousel">
+                <button class="carousel-btn prev" id="prev-pic">&#10094;</button>
+                <img id="modal-img" src="" alt="Foto do pássaro">
+                <button class="carousel-btn next" id="next-pic">&#10095;</button>
+            </div>
+
+            <div class="modal-info">
+                <h2 id="modal-title">Nome do Pássaro</h2>
+                <p id="modal-scientific-name" class="scientific-name">Nome científico</p>
+
+                <div class="audio-player-container">
+                    <label for="modal-audio">Canto do Pássaro:</label>
+                    <audio id="modal-audio" controls src=""></audio>
+                </div>
+
+                <hr>
+                <p id="modal-description">Descrição completa do estudo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
