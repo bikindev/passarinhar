@@ -89,7 +89,7 @@ const birdsData = [
         audio: "https://xeno-canto.org/7278/download"
     },
     {
-        id: 6,
+        id: 7,
         name: "Seriema",
         scientificName: "Cariama cristata",
         shortDescription: "Ave símbolo do estado de Minas Gerais.",
@@ -101,6 +101,45 @@ const birdsData = [
             "https://s2.glbimg.com/QbGPcIEtLULvM9vAdyNGmz9N5-8=/620x465/s.glbimg.com/jo/g1/f/original/2016/12/19/bio_135.jpg"
         ],
         audio: "https://xeno-canto.org/1064768/download"
+    },
+    {
+        id: 8,
+        name: "Japu-preto",
+        scientificName: "Psarocolius decumanus",
+        shortDescription: "É o fura-banana.",
+        fullDescription: "",
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/e/e9/Crested_oropendola_%28Psarocolius_decumanus_insularis%29.jpg",
+            "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/245173471/1800",
+            "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/245173521/480"
+        ],
+        audio: "https://xeno-canto.org/538014/download"
+    },
+    {
+        id: 9,
+        name: "Bem-te-vi",
+        scientificName: "Pitangus sulphuratus",
+        shortDescription: "Bem-te-vi, ah meu bem-te-vi",
+        fullDescription: "",
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/2/2f/Bem-Te-Vi.jpg",
+            "https://images.pexels.com/photos/32847274/pexels-photo-32847274.jpeg?_gl=1*qj2uwx*_ga*ODMwMDUyMDczLjE3NzAyMzY2OTc.*_ga_8JE65Q40S6*czE3ODA2ODg0NDgkbzckZzAkdDE3ODA2ODg0NDgkajYwJGwwJGgw",
+            "https://faunanews.com.br/wp-content/uploads/2025/04/bem-te-vi_WA2781281.webp"
+        ],
+        audio: "https://xeno-canto.org/1088263/download"
+    },
+    {
+        id: 10,
+        name: "Canário-da-terra",
+        scientificName: "Sicalis flaveola",
+        shortDescription: "É o fura-banana.",
+        fullDescription: "",
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/b/b9/Saffron_finch_%28Sicalis_flaveola%29_male.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/0/04/Sicalis_flaveola_f%C3%AAmea.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/8/89/Can%C3%A1rio-da-terra_%28Sicalis_flaveola%29.jpg"
+        ],
+        audio: "https://xeno-canto.org/1027721/download"
     }
 ];
 
